@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "scalerui"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "skhchiu@gmail.com"
+    gem.summary = %Q{ Our internal UI framework for rapid wireframing and web development }
+    gem.description = %Q{ A basic UI layout and object oriented CSS components we use for rapid development. Basically, this saves us time from having to rehash everything over, and over, and over... }
+    gem.email = "dev@scalerapps.com"
     gem.homepage = "http://github.com/tolatomeow/scalerui"
     gem.authors = ["Simon Chiu"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
