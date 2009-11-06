@@ -64,8 +64,11 @@ Options:
       
       # Sets some instance variables
       @install       = @options[:install]
-      @install_dir   = @options[:install_dir]    
+      @install_dir   = @options[:install_dir]
+      
+      raise NoTargetDirectoryError if @install_dir.nil?
       @assets_dir    = @options[:assets] || File.join(@install_dir, "public")
+
       @scalerui_dir  = File.join(@assets_dir, "scalerui")
       @images_dir    = File.join(@scalerui_dir, "images")
       @js_dir        = File.join(@scalerui_dir, "javascript")
@@ -80,8 +83,6 @@ Options:
   protected
   
   def process
-    raise NoTargetDirectoryError if @install_dir.nil?    
-    
     if @install
       # -- Begin of Installation
       

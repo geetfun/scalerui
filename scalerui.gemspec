@@ -5,13 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{scalerui}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Simon Chiu"]
   s.date = %q{2009-11-05}
+  s.default_executable = %q{scalerui}
   s.description = %q{ A basic UI layout and object oriented CSS components we use for rapid development. Basically, this saves us time from having to rehash everything over, and over, and over... }
   s.email = %q{dev@scalerapps.com}
+  s.executables = ["scalerui"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -23,7 +25,11 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "bin/scalerui",
      "lib/scalerui.rb",
+     "scalerui.gemspec",
+     "src/scalerui-0.1.1.tar.gz",
+     "src/scalerui-0.1.1.tar.gz",
      "test/helper.rb",
      "test/test_scalerui.rb"
   ]
